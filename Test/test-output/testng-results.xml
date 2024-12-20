@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[OpenBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Login]]>
+    </line>
+    <line>
+      <![CDATA[Logout]]>
+    </line>
+    <line>
+      <![CDATA[Login]]>
+    </line>
+    <line>
+      <![CDATA[deleteCustomer]]>
+    </line>
+    <line>
+      <![CDATA[deleteCustomerhas been passed]]>
+    </line>
+    <line>
+      <![CDATA[Logout]]>
+    </line>
+    <line>
+      <![CDATA[modifyCustomerhas been skipped]]>
+    </line>
+    <line>
+      <![CDATA[CloseBrowser,true]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-12-11T08:08:01 IST" name="Default suite" finished-at="2024-12-11T08:08:06 IST" duration-ms="4606">
+    <groups>
+      <group name="smokeTesing">
+        <method signature="CustomerModule.createCustomer()[pri:0, instance:Practice.CustomerModule@74e52303]" name="createCustomer" class="Practice.CustomerModule"/>
+      </group> <!-- smokeTesing -->
+      <group name="RegressionTesting">
+        <method signature="CustomerModule.createCustomer()[pri:0, instance:Practice.CustomerModule@74e52303]" name="createCustomer" class="Practice.CustomerModule"/>
+        <method signature="CustomerModule.deleteCustomer()[pri:0, instance:Practice.CustomerModule@74e52303]" name="deleteCustomer" class="Practice.CustomerModule"/>
+        <method signature="CustomerModule.modifyCustomer()[pri:0, instance:Practice.CustomerModule@74e52303]" name="modifyCustomer" class="Practice.CustomerModule"/>
+      </group> <!-- RegressionTesting -->
+    </groups>
+    <test started-at="2024-12-11T08:08:01 IST" name="Default test" finished-at="2024-12-11T08:08:06 IST" duration-ms="4606">
+      <class name="Practice.CustomerModule">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:01 IST" name="openBrowser" finished-at="2024-12-11T08:08:03 IST" duration-ms="1934" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[OpenBrowser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:03 IST" name="Login" finished-at="2024-12-11T08:08:03 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="createCustomer()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:03 IST" name="createCustomer" finished-at="2024-12-11T08:08:03 IST" duration-ms="17" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at Practice.CustomerModule.createCustomer(CustomerModule.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:04 IST" name="Logout" finished-at="2024-12-11T08:08:04 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:04 IST" name="Login" finished-at="2024-12-11T08:08:04 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="deleteCustomer()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:04 IST" name="deleteCustomer" finished-at="2024-12-11T08:08:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[deleteCustomer]]>
+            </line>
+            <line>
+              <![CDATA[deleteCustomerhas been passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:04 IST" name="Logout" finished-at="2024-12-11T08:08:05 IST" duration-ms="874" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="modifyCustomer()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:05 IST" name="modifyCustomer" finished-at="2024-12-11T08:08:05 IST" depends-on-methods="Practice.CustomerModule.createCustomer" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CustomerModule.modifyCustomer()[pri:0, instance:Practice.CustomerModule@74e52303] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CustomerModule.modifyCustomer()[pri:0, instance:Practice.CustomerModule@74e52303] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[modifyCustomerhas been skipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- modifyCustomer -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Practice.CustomerModule@74e52303]" started-at="2024-12-11T08:08:05 IST" name="closeBrowser" finished-at="2024-12-11T08:08:06 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[CloseBrowser,true]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Practice.CustomerModule -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
